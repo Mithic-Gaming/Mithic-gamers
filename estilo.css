@@ -130,3 +130,8 @@ footer {
     main { max-width: 98vw; padding: 10vw 2vw; }
     .juego { padding: 10vw 2vw; }
 }
+body {
+    background: url('ruta/a/tu/imagen.png') center top no-repeat, /* tu imagen */
+                linear-gradient(135deg, #1a0507 0%, #2c0404 100%);
+    background-size: contain, cover;
+}
