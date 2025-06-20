@@ -2,123 +2,78 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background: #181c25;
-    color: #fff;
+    background: #f4f4f4;
+    color: #222;
 }
 
 header {
-    background: #29304d;
-    padding: 30px 0 20px 0;
+    background: #252525;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    border-bottom: 4px solid #00c3ff;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    letter-spacing: 1px;
-}
-
-nav {
-    margin-top: 15px;
 }
 
 nav a {
-    color: #00c3ff;
+    color: #ffd700;
     text-decoration: none;
-    margin: 0 18px;
+    margin: 0 15px;
     font-weight: bold;
-    transition: color 0.2s;
 }
 
 nav a:hover {
-    color: #fff;
+    text-decoration: underline;
 }
 
 main {
-    max-width: 900px;
-    margin: 40px auto 0 auto;
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
     padding: 30px;
-    background: #22263a;
     border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
-}
-
-section {
-    margin-bottom: 35px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
 }
 
 h2 {
-    border-left: 5px solid #00c3ff;
-    padding-left: 12px;
-    margin: 18px 0 14px 0;
-    color: #00c3ff;
-}
-
-article {
-    background: #23273e;
-    padding: 18px 20px 12px 20px;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    box-shadow: 0 1px 8px rgba(0,0,0,0.12);
-}
-
-article h3 {
-    color: #ffdb70;
-    margin-top: 0;
+    color: #252525;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 6px;
 }
 
 .juego {
-    display: inline-block;
-    width: 250px;
-    background: #2a2e46;
+    margin-bottom: 35px;
+    background: #fafafa;
+    padding: 18px 12px;
     border-radius: 8px;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.13);
-    margin: 15px 14px 10px 0;
-    vertical-align: top;
-    text-align: center;
-    padding: 18px 12px 20px 12px;
-}
-
-.juego img {
-    width: 90%;
-    border-radius: 7px;
-    border: 2px solid #00c3ff;
-    margin-bottom: 12px;
+    box-shadow: 0 1px 4px #ddd;
 }
 
 .juego h4 {
-    margin: 9px 0 7px 0;
-    color: #7afcff;
-}
-
-.juego p {
-    font-size: 1em;
+    margin-top: 0;
+    color: #0077cc;
 }
 
 .juego a {
     display: inline-block;
-    margin-top: 7px;
-    background: #00c3ff;
-    color: #181c25;
-    padding: 7px 17px;
+    background: #ffd700;
+    color: #252525;
+    padding: 8px 18px;
     border-radius: 5px;
     text-decoration: none;
+    margin-bottom: 8px;
+    margin-top: 8px;
     font-weight: bold;
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s;
 }
 
 .juego a:hover {
-    background: #fff;
-    color: #00c3ff;
+    background: #ffb100;
 }
 
 footer {
-    background: #29304d;
-    color: #c3c3c3;
+    background: #252525;
+    color: #fff;
     text-align: center;
-    padding: 17px 0;
-    margin-top: 45px;
-    border-top: 3px solid #00c3ff;
-    font-size: 1em;
+    padding: 15px 0;
+    margin-top: 30px;
+    border-radius: 0 0 10px 10px;
 }
