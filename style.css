@@ -315,3 +315,10 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+.section {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section.visible {
+  opacity: 1;
+}
