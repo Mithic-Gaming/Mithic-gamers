@@ -187,3 +187,48 @@ footer {
   margin-bottom: 10px;
   font-size: 1.05em;
 }
+.logo {
+    height: 64px;
+    width: auto;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 16px 0;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fa3946;
+}
+nav {
+    margin-left: auto;
+}
+nav a {
+    color: #fff;
+    background: #fa3946;
+    text-decoration: none;
+    margin-left: 18px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+nav a:hover {
+    background: #fff;
+    color: #fa3946;
+}
+body {
+    background: #1e1b22;
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #aaa;
+    font-size: 1em;
+}
