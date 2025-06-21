@@ -235,3 +235,7 @@ function showSection(id) {
   document.querySelectorAll('.section').forEach(sec => sec.classList.remove('visible'));
   document.getElementById(id).classList.add('visible');
 }
+<button onclick="showSection('about')">Sobre mí</button>
+<div id="about" class="section">
+  <p>Contenido de la sección sobre mí.</p>
+</div>
