@@ -285,3 +285,11 @@ footer {
   margin-bottom: 10px;
   font-size: 1.05em;
 }
+body {
+  background-image: url('logo-mithic.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 400px 400px; /* Puedes cambiar el tamaño aquí */
+  background-color: #1e1b22; /* Color de fondo de tu web */
+}
