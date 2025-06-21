@@ -116,4 +116,30 @@ footer {
     position: relative;
     z-index: 1;
 }
-  
+  .catalogo-juegos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 28px;
+  justify-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.juego {
+  width: 100%;
+  max-width: 280px;
+  background: #232027;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #0007;
+  padding: 18px 16px;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .catalogo-juegos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .catalogo-juegos {
+    grid-template-columns: 1fr;
+  }
+}
