@@ -232,3 +232,51 @@ footer {
     color: #aaa;
     font-size: 1em;
 }
+.logo-grande {
+  max-width: 180px;
+  display: block;
+  margin: 0 auto 24px auto;
+}
+.bienvenida {
+  text-align: center;
+  margin: 40px 0 32px 0;
+}
+.botones-inicio {
+  margin: 28px 0 8px 0;
+}
+.botones-inicio .btn {
+  display: inline-block;
+  padding: 10px 32px;
+  margin: 0 10px 10px 0;
+  background: #fa3946;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background 0.2s, color 0.2s;
+}
+.botones-inicio .btn:hover {
+  background: #fff;
+  color: #fa3946;
+  border: 2px solid #fa3946;
+}
+.destacados {
+  background: #1e1b22;
+  margin: 32px auto;
+  padding: 24px 12px;
+  border-radius: 16px;
+  max-width: 500px;
+}
+.destacados h3 {
+  color: #fa3946;
+  margin-bottom: 16px;
+}
+.destacados ul {
+  list-style: none;
+  padding: 0;
+}
+.destacados li {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+}
