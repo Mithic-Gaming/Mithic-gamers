@@ -288,3 +288,21 @@ body {
   background-size: 400px 400px; /* Puedes cambiar el tamaño aquí */
   background-color: #1e1b22; /* Color de fondo de tu web */
 }
+/* Efecto de agrandar imagen al pasar el mouse */
+.img-hover-zoom {
+  transition: transform 0.3s ease;
+}
+.img-hover-zoom:hover {
+  transform: scale(1.1);
+}
+
+/* Efecto de cambio de color en botón */
+.button-hover {
+  background-color: #4CAF50;
+  color: white;
+  transition: background 0.3s, color 0.3s;
+}
+.button-hover:hover {
+  background-color: #45a049;
+  color: #fffde4;
+}
