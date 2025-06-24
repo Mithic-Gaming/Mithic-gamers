@@ -347,3 +347,105 @@ nav a:hover {
   color: #fa3946;
   text-decoration: underline;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 10px 0 30px 0;
+}
+
+nav a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+  padding: 8px 12px;
+}
+
+nav a:hover {
+  color: #fa3946;
+  text-decoration: underline;
+}
+
+.juegos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 32px auto 32px auto;
+  padding: 0 16px;
+}
+
+.juego {
+  background: #25202b;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px #0005;
+  padding: 20px 16px;
+  text-align: center;
+  min-height: 150px;
+}
+
+.juego h4 {
+  margin-bottom: 10px;
+  color: #fa3946;
+}
+
+.juego a {
+  display: inline-block;
+  background: #fa3946;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.juego a:hover {
+  background: #ffbd39;
+  color: #25202b;
+}
+
+#opinion {
+  margin: 40px auto 30px auto;
+  max-width: 500px;
+  background: #221f27;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px #0003;
+  padding: 20px 24px;
+}
+
+#opinion h2 {
+  color: #fa3946;
+  margin-bottom: 16px;
+}
+
+#opinion input[type="text"],
+#opinion textarea {
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  padding: 8px;
+  margin-bottom: 10px;
+  background: #292433;
+  color: #fff;
+  font-size: 1em;
+}
+
+#opinion button {
+  background: #fa3946;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#opinion button:hover {
+  background: #ffbd39;
+  color: #25202b;
+}
