@@ -135,13 +135,14 @@
     <script>
       AOS.init();
       // Rango y barra de progreso
-      const usuario = { nombre: "player82", puntos: 704 };
+      const usuario = { nombre: "player82", puntos: 104 };
       const rangos = [
-        { nombre: "Novato", min: 0, insignia: "🎮" },
-        { nombre: "Gamer", min: 300, insignia: "🕹️" },
-        { nombre: "Pro", min: 700, insignia: "🏅" },
+        { nombre: "NPC", min: 0, insignia: "❓" },
+        { nombre: "Random", min: 150, insignia: "💩" },
+        { nombre: "Gamer", min: 300, insignia: "🎮" },
+        { nombre: "Pro", min: 700, insignia: "🕹️" },
         { nombre: "Leyenda", min: 1200, insignia: "👑" }
-      ];
+        { nombre: "Empoyon", min: 1200, insignia: "🤯" }
       let rangoActual = rangos[0];
       let siguienteRango = null;
       for(let i = rangos.length-1; i >= 0; i--) {
