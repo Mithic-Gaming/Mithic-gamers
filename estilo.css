@@ -488,3 +488,13 @@ nav a:hover {
   border-radius: 10px;
   transition: width 0.7s;
 }
+.leaderboard {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
+}
+
+.leaderboard table {
+  margin-left: auto;
+  margin-right: auto;
+}
