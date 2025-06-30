@@ -449,3 +449,42 @@ nav a:hover {
   background: #ffbd39;
   color: #25202b;
 }
+.perfil {
+  text-align: center;
+  background: #25202b;
+  border-radius: 16px;
+  padding: 32px 24px;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 6px 24px #0005;
+}
+.avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: 3px solid #fa3946;
+  margin-bottom: 12px;
+}
+.rango {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 14px 0;
+}
+.insignia {
+  display: inline-block;
+  margin: 6px;
+  font-size: 2em;
+}
+.barra-nivel {
+  width: 90%;
+  height: 16px;
+  background: #292433;
+  border-radius: 10px;
+  margin: 18px auto 0 auto;
+}
+.barra-progreso {
+  height: 16px;
+  background: linear-gradient(90deg, #fa3946, #ffbd39);
+  border-radius: 10px;
+  transition: width 0.7s;
+}
