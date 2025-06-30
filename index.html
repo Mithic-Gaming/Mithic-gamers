@@ -2,171 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>101 Mithic Gaming</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Mithic Gaming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="logo-mithic.png" type="image/png">
-    <!-- Animaciones scroll (AOS) -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <style>
-      body { background: #1e1b22; color: #fff; font-family: Arial, sans-serif; }
-      .logo { width: 65px; vertical-align: middle; }
-      header { text-align: center; padding: 30px 0 10px 0; }
-      nav { margin: 10px 0 30px 0; text-align: center; }
-      nav a { color: #fff; text-decoration: none; margin: 0 16px; font-size: 1.1em; }
-      nav a:hover { color: #fa3946; text-decoration: underline; }
-      .bienvenida, .destacados, .leaderboard, .perfil, #opinion { margin: 32px auto; max-width: 600px; background: #25202b; padding: 22px 24px; border-radius: 18px; box-shadow: 0 6px 24px #0005; }
-      .logo-grande { width: 100px; display: block; margin: 0 auto 16px auto; }
-      .btn { display: inline-block; padding: 10px 22px; background: #fa3946; color: #fff; border-radius: 6px; text-decoration: none; margin: 6px 4px; transition: background 0.3s; }
-      .btn:hover { background: #ffbd39; color: #25202b; }
-      table { margin: 30px auto; background: #25202b; border-radius: 16px; border-collapse: collapse; width: 100%; max-width: 550px; box-shadow: 0 6px 24px #0005;}
-      th, td { padding: 14px 16px; text-align: center; }
-      th { background: #fa3946; color: #fff; }
-      tr:nth-child(even) { background: #221f27; }
-      tr:nth-child(odd) { background: #292433; }
-      tr:first-child td { font-weight: bold; font-size: 1.1em; }
-      .top-1 { color: gold; }
-      .top-2 { color: silver; }
-      .top-3 { color: #cd7f32; }
-      .perfil { text-align: center; }
-      .avatar { width: 92px; height: 92px; border-radius: 50%; border: 3px solid #fa3946; margin-bottom: 12px; }
-      .rango { font-size: 1.2em; font-weight: bold; margin: 14px 0; }
-      .insignia { display: inline-block; margin: 6px; font-size: 2em; }
-      .barra-nivel { width: 90%; height: 16px; background: #292433; border-radius: 10px; margin: 18px auto 0 auto; }
-      .barra-progreso { height: 16px; background: linear-gradient(90deg, #fa3946, #ffbd39); border-radius: 10px; }
-      footer { text-align: center; color: #aaa; margin: 50px 0 0 0; }
-    </style>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <img src="logo-mithic.png" alt="Logo Mithic M.F." class="logo">
-        <h1>101 Mithic Gaming</h1>
+        <img src="logo-mithic.png" alt="Logo Mithic Gaming" class="logo">
+        <h1>Mithic Gaming</h1>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="videojuegos.html">Videojuegos</a>
             <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
     </header>
-    <main>
-      <section class="bienvenida" data-aos="fade-up">
-        <img src="logo-mithic.png" alt="Logo Mithic M.F." class="logo-grande">
-        <h2>¡Bienvenido a 101 Mithic Gaming!</h2>
-        <p>
-          Mithic es una empresa de inventos, ventas y videojuegos.
-            Tip: "Mithic" se escribe con I, no con Y.<br>
-        </p>
-        <div class="botones-inicio">
-          <a href="videojuegos.html" class="btn">Ver Juegos</a>
-          <a href="productos.html" class="btn">Ver Productos</a>
-          <a href="contacto.html" class="btn">Contacto</a>
-        </div>
-      </section>
-      <section class="destacados" data-aos="fade-right">
-        <h3>Últimas novedades</h3>
-        <ul>
-          <li>🎮 Nuevo juego: <strong>Temple Run 2</strong> añadido al catálogo.</li>
-          <li>🛒 Ofertas en chikles y pulseras.</li>
-          <li>👾 Únete a nuestro <a href="#">Discord</a> para torneos exclusivos.</li>
-        </ul>
-      </section>
-      <section class="leaderboard" data-aos="fade-up">
-        <h2>🏆 Leaderboard - Top Usuarios</h2>
-        <table>
-          <tr>
-            <th>Puesto</th>
-            <th>Usuario</th>
-            <th>Puntos</th>
-          </tr>
-          <tr>
-            <td class="top-1">1</td>
-            <td class="top-1">skividirubiusprime</td>
-            <td class="top-1">8227</td>
-          </tr>
-          <tr>
-            <td class="top-2">2</td>
-            <td class="top-2">nofuistetufuéelyismel</td>
-            <td class="top-2">5662</td>
-          </tr>
-          <tr>
-            <td class="top-3">3</td>
-            <td class="top-3">evantuabuelo</td>
-            <td class="top-3">2590</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>aitorelmejor</td>
-            <td>1990</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>eskuadronpepinon</td>
-            <td>1310</td>
-          </tr>
-        </table>
-      </section>
-      <section class="perfil" data-aos="fade-left">
-        <img src="https://i.imgur.com/NZ2WbFh.png" alt="Avatar" class="avatar">
-        <h2 id="nombre-usuario">player82</h2>
-        <div class="rango" id="rango-usuario"></div>
-        <div>
-          <span class="insignia" id="insignia"></span>
-        </div>
-        <div>Puntos: <span id="puntos">704</span></div>
-        <div class="barra-nivel">
-          <div class="barra-progreso" id="barra-progreso" style="width:0"></div>
-        </div>
-        <div id="progreso-nivel"></div>
-      </section>
-      <section id="opinion" data-aos="fade-up">
-        <h2>¡Déjanos tu opinión!</h2>
-        <form action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST">
-          <label for="nombre">Nombre (opcional):</label><br>
-          <input type="text" id="nombre" name="nombre"><br><br>
-          <label for="comentario">Tu opinión:</label><br>
-          <textarea id="comentario" name="comentario" rows="4" cols="40" required></textarea><br><br>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 101 Mithic Gaming. Todos los derechos reservados.</p>
-    </footer>
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-      // Rango y barra de progreso
-      const usuario = { nombre: "player82", puntos: 104 };
-      const rangos = [
-        { nombre: "NPC", min: 0, insignia: "❓" },
-        { nombre: "Random", min: 100, insignia: "💩" },
-        { nombre: "Gamer", min: 300, insignia: "🎮" },
-        { nombre: "Pro", min: 900, insignia: "🕹️" },
-        { nombre: "Leyenda", min: 2700, insignia: "👑" }
-        { nombre: "Empoyon", min: 8000, insignia: "🤯" }
-      let rangoActual = rangos[0];
-      let siguienteRango = null;
-      for(let i = rangos.length-1; i >= 0; i--) {
-        if(usuario.puntos >= rangos[i].min) {
-          rangoActual = rangos[i];
-          siguienteRango = rangos[i+1] || null;
-          break;
-        }
-      }
-      document.getElementById("nombre-usuario").textContent = usuario.nombre;
-      document.getElementById("puntos").textContent = usuario.puntos;
-      document.getElementById("rango-usuario").textContent = "Rango: " + rangoActual.nombre;
-      document.getElementById("insignia").textContent = rangoActual.insignia;
-      let progreso = 1;
-      if(siguienteRango) {
-        const puntosRango = siguienteRango.min - rangoActual.min;
-        const puntosUsuario = usuario.puntos - rangoActual.min;
-        progreso = Math.max(0, Math.min(1, puntosUsuario / puntosRango));
-        document.getElementById("progreso-nivel").textContent =
-          `¡Te faltan ${siguienteRango.min - usuario.puntos} puntos para ser ${siguienteRango.nombre}!`;
-      } else {
-        document.getElementById("progreso-nivel").textContent = "¡Has alcanzado el máximo rango!";
-      }
-      document.getElementById("barra-progreso").style.width = (progreso*100) + "%";
-    </script>
-</body>
-</html>
