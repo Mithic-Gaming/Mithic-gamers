@@ -72,6 +72,63 @@
                     <td>910</td>
                 </tr>
             </table>
+            <section class="perfil">
+    <img src="https://i.imgur.com/NZ2WbFh.png" alt="Avatar" class="avatar">
+    <h2 id="nombre-usuario">JuaniX</h2>
+    <div class="rango" id="rango-usuario"></div>
+    <div>
+      <span class="insignia" id="insignia"></span>
+    </div>
+    <div>Puntos: <span id="puntos">830</span></div>
+    <div class="barra-nivel">
+      <div class="barra-progreso" id="barra-progreso" style="width:0"></div>
+    </div>
+    <div id="progreso-nivel"></div>
+</section>
+<script>
+  // Puedes traer estos datos de tu sistema real/Firebase
+  const usuario = {
+    nombre: "JuaniX",
+    puntos: 830
+  };
+
+  // Define los rangos y sus requisitos (puedes agregar más)
+  const rangos = [
+    { nombre: "Novato", min: 0, insignia: "🎮" },
+    { nombre: "Gamer", min: 300, insignia: "🕹️" },
+    { nombre: "Pro", min: 700, insignia: "🏅" },
+    { nombre: "Leyenda", min: 1200, insignia: "👑" }
+  ];
+
+  // Busca el rango actual y el siguiente
+  let rangoActual = rangos[0];
+  let siguienteRango = null;
+  for(let i = rangos.length-1; i >= 0; i--) {
+    if(usuario.puntos >= rangos[i].min) {
+      rangoActual = rangos[i];
+      siguienteRango = rangos[i+1] || null;
+      break;
+    }
+  }
+
+  document.getElementById("nombre-usuario").textContent = usuario.nombre;
+  document.getElementById("puntos").textContent = usuario.puntos;
+  document.getElementById("rango-usuario").textContent = "Rango: " + rangoActual.nombre;
+  document.getElementById("insignia").textContent = rangoActual.insignia;
+
+  // Barra de progreso al siguiente rango
+  let progreso = 1;
+  if(siguienteRango) {
+    const puntosRango = siguienteRango.min - rangoActual.min;
+    const puntosUsuario = usuario.puntos - rangoActual.min;
+    progreso = Math.max(0, Math.min(1, puntosUsuario / puntosRango));
+    document.getElementById("progreso-nivel").textContent =
+      `¡Te faltan ${siguienteRango.min - usuario.puntos} puntos para ser ${siguienteRango.nombre}!`;
+  } else {
+    document.getElementById("progreso-nivel").textContent = "¡Has alcanzado el máximo rango!";
+  }
+  document.getElementById("barra-progreso").style.width = (progreso*100) + "%";
+</script>
         </section>
         <section id="opinion">
             <h2>¡Déjanos tu opinión!</h2>
