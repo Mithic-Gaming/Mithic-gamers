@@ -171,3 +171,28 @@
     body {
       margin: 0;
       height: 100vh;
+background: linear-gradient(to bottom, red, orange);
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+
+    .marca-agua {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-30deg);
+      font-size: 80px;
+      color: rgba(0, 0, 0, 0.1); /* Negro muy transparente */
+      z-index: 0;
+      pointer-events: none; /* Para que no interfiera con clics */
+      user-select: none; /* Para que no se pueda seleccionar el texto */
+      white-space: nowrap;
+    }
+
+    .contenido {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+      color: white;
+    }
+  </style>
