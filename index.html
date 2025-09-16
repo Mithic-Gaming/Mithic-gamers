@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Mithic Gaming</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="logo-mithic.png" type="image/png">
-    <link rel="stylesheet" href="estilo.css">
-</head>
+    <link rel="icon" href="logo-mithic.png" type="image/png"> 
+    <link rel="stylesheet" href="estilo.css"> 
+</head> 
 <body>
     <header>
         <img src="logo-mithic.png" alt="Logo Mithic Gaming" class="logo">
@@ -15,13 +15,15 @@
             <a href="index.html">Inicio</a>
             <a href="videojuegos.html">Videojuegos</a>
             <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
     </header>
+
     <main>
         <section class="bienvenida">
             <h2>¡Bienvenido a Mithic Gaming!</h2>
             <p>
-                bienbenidos usuarios de Mithic.<br>
+                Bienvenidos usuarios de Mithic.<br>
                 Descubre los mejores juegos online gratuitos, encuentra ofertas y precios super bajos.
             </p>
             <div class="botones-inicio">
@@ -30,6 +32,7 @@
                 <a href="contacto.html" class="btn">Contacto</a>
             </div>
         </section>
+
         <section class="destacados">
             <h3>Últimas novedades</h3>
             <ul>
@@ -38,6 +41,7 @@
                 <li>👾 Únete a nuestros <a href="#">torneos</a> para regalos exclusivos.</li>
             </ul>
         </section>
+
         <section class="leaderboard">
             <h2>🏆 Top Usuarios</h2>
             <table>
@@ -72,67 +76,22 @@
                     <td>1207</td>
                 </tr>
             </table>
-            <section class="perfil">
-    <img src="https://i.imgur.com/NZ2WbFh.png" alt="Avatar" class="avatar">
-    <h2 id="nombre-usuario">BOT-82</h2>
-    <div class="rango" id="rango-usuario"></div>
-    <div>
-      <span class="insignia" id="insignia"></span>
-    </div>
-    <div>Puntos: <span id="puntos">157</span></div>
-    <div class="barra-nivel">
-      <div class="barra-progreso" id="barra-progreso" style="width:0"></div>
-    </div>
-    <div id="progreso-nivel"></div>
-</section>
-<script>
-  // Puedes traer estos datos de tu sistema real/Firebase
-  const usuario = {
-    nombre: "BOT-82,
-    puntos: 157
-  };
-
-  // Define los rangos y sus requisitos (puedes agregar más)
-  const rangos = [
-    { nombre: "NPC", min: 0, insignia: "🗑" },
-    { nombre: "Novato", min: 150, insignia: "🎮" },
-    { nombre: "Gamer", min: 300, insignia: "🕹️" },
-    { nombre: "Pro", min: 700, insignia: "🏅" },
-    { nombre: "Leyenda", min: 1200, insignia: "👑" }
-    { nombre: "Skividi hacker", min: 5000, insignia: "🏆" }
-    { nombre: "QUE PATOS", min: 7500, insignia: "💩" }
-  ];
-
-  // Busca el rango actual y el siguiente
-  let rangoActual = rangos[0];
-  let siguienteRango = null;
-  for(let i = rangos.length-1; i >= 0; i--) {
-    if(usuario.puntos >= rangos[i].min) {
-      rangoActual = rangos[i];
-      siguienteRango = rangos[i+1] || null;
-      break;
-    }
-  }
-
-  document.getElementById("nombre-usuario").textContent = usuario.nombre;
-  document.getElementById("puntos").textContent = usuario.puntos;
-  document.getElementById("rango-usuario").textContent = "Rango: " + rangoActual.nombre;
-  document.getElementById("insignia").textContent = rangoActual.insignia;
-
-  // Barra de progreso al siguiente rango
-  let progreso = 1;
-  if(siguienteRango) {
-    const puntosRango = siguienteRango.min - rangoActual.min;
-    const puntosUsuario = usuario.puntos - rangoActual.min;
-    progreso = Math.max(0, Math.min(1, puntosUsuario / puntosRango));
-    document.getElementById("progreso-nivel").textContent =
-      `¡Te faltan ${siguienteRango.min - usuario.puntos} puntos para ser ${siguienteRango.nombre}!`;
-  } else {
-    document.getElementById("progreso-nivel").textContent = "¡Has alcanzado el máximo rango!";
-  }
-  document.getElementById("barra-progreso").style.width = (progreso*100) + "%";
-</script>
         </section>
+
+        <section class="perfil">
+            <img src="https://i.imgur.com/NZ2WbFh.png" alt="Avatar" class="avatar">
+            <h2 id="nombre-usuario">BOT-82</h2>
+            <div class="rango" id="rango-usuario"></div>
+            <div>
+                <span class="insignia" id="insignia"></span>
+            </div>
+            <div>Puntos: <span id="puntos">157</span></div>
+            <div class="barra-nivel">
+                <div class="barra-progreso" id="barra-progreso" style="width:0"></div>
+            </div>
+            <div id="progreso-nivel"></div>
+        </section>
+
         <section id="opinion">
             <h2>¡Déjanos tu opinión!</h2>
             <form action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST">
@@ -144,69 +103,57 @@
             </form>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Mithic Gaming. Todos los derechos reservados.</p>
     </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Rojo a Naranja</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: linear-gradient(to bottom, red, orange);
-    }
-  </style>
-</head>
-<body>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Página con Marca de Agua</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-background: linear-gradient(to bottom, red, orange);
-      position: relative;
-      font-family: Arial, sans-serif;
-    }
 
-    .marca-agua {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(-30deg);
-      font-size: 80px;
-      color: rgba(0, 0, 0, 0.1); /* Negro muy transparente */
-      z-index: 0;
-      pointer-events: none; /* Para que no interfiera con clics */
-      user-select: none; /* Para que no se pueda seleccionar el texto */
-      white-space: nowrap;
-    }
+    <script>
+        // Puedes traer estos datos de tu sistema real/Firebase
+        const usuario = {
+            nombre: "BOT-82",
+            puntos: 157
+        };
 
-    .contenido {
-      position: relative;
-      z-index: 1;
-      padding: 2rem;
-      color: white;
-    }
-  </style>
-</head>
-<body>
+        // Define los rangos y sus requisitos
+        const rangos = [
+            { nombre: "NPC", min: 0, insignia: "🗑" },
+            { nombre: "Novato", min: 150, insignia: "🎮" },
+            { nombre: "Gamer", min: 300, insignia: "🕹️" },
+            { nombre: "Pro", min: 700, insignia: "🏅" },
+            { nombre: "Leyenda", min: 1200, insignia: "👑" },
+            { nombre: "Skividi hacker", min: 5000, insignia: "🏆" },
+            { nombre: "QUE PATOS", min: 7500, insignia: "💩" }
+        ];
 
-  <div class="marca-agua">MITHIC</div>
+        // Determinar rango actual
+        let rangoActual = rangos[0];
+        let siguienteRango = null;
+        for (let i = rangos.length - 1; i >= 0; i--) {
+            if (usuario.puntos >= rangos[i].min) {
+                rangoActual = rangos[i];
+                siguienteRango = rangos[i + 1] || null;
+                break;
+            }
+        }
 
-  <div class="contenido">
-    <h1>Juega nuestros juegos y compra a precios bajisimos</h1>
-  </div>
+        document.getElementById("nombre-usuario").textContent = usuario.nombre;
+        document.getElementById("puntos").textContent = usuario.puntos;
+        document.getElementById("rango-usuario").textContent = "Rango: " + rangoActual.nombre;
+        document.getElementById("insignia").textContent = rangoActual.insignia;
 
+        // Barra de progreso
+        let progreso = 1;
+        if (siguienteRango) {
+            const puntosRango = siguienteRango.min - rangoActual.min;
+            const puntosUsuario = usuario.puntos - rangoActual.min;
+            progreso = Math.max(0, Math.min(1, puntosUsuario / puntosRango));
+            document.getElementById("progreso-nivel").textContent =
+                `¡Te faltan ${siguienteRango.min - usuario.puntos} puntos para ser ${siguienteRango.nombre}!`;
+        } else {
+            document.getElementById("progreso-nivel").textContent = "¡Has alcanzado el máximo rango!";
+        }
+        document.getElementById("barra-progreso").style.width = (progreso * 100) + "%";
+    </script>
 </body>
 </html>
